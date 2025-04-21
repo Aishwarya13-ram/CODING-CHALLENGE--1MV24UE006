@@ -1,4 +1,4 @@
-# CODING-CHALLENGE-1MV24UE006
+hi# CODING-CHALLENGE-1MV24UE006
 def count_vowels_and_consonants(input_string):
     vowels = set("aeiou")
     consonants = set("bcdfghjklmnpqrstvwxyz")
@@ -82,3 +82,30 @@ Enter a string: Hello, World!
 
 Number of vowels: 3
 Number of consonants: 7
+def print_triangle(n):
+    # Iterate through each row
+    for i in range(1, n + 1):
+        # Calculate spaces for center alignment and stars for the current row
+        spaces = ' ' * (n - i)
+        stars = '*' * (2 * i - 1)
+        # Print the row
+        print(spaces + stars)
+
+# Input from the user
+try:
+    n = int(input("Enter the number of rows for the triangle: "))
+    if n > 0:
+        print_triangle(n)
+    else:
+        print("Please enter a positive integer.")
+except ValueError:
+    print("Invalid input. Please enter an integer.")
+
+Enter the number of rows for the triangle: 5   
+
+ 
+    *
+   ***
+  *****
+ *******
+*********
