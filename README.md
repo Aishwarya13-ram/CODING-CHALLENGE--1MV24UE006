@@ -50,3 +50,35 @@ except ValueError:
 Enter an integer n: 10
 
 Prime numbers less than or equal to 10: [2, 3, 5, 7]
+
+def count_vowels_and_consonants(input_string):
+    # Define sets of vowels
+    vowels = set("aeiou")
+    consonants = set("bcdfghjklmnpqrstvwxyz")
+    
+    # Initialize counters
+    vowel_count = 0
+    consonant_count = 0
+
+    # Convert the string to lowercase for case insensitivity
+    input_string = input_string.lower()
+
+    # Iterate through the string
+    for char in input_string:
+        if char in vowels:
+            vowel_count += 1
+        elif char in consonants:
+            consonant_count += 1
+
+    # Print the results
+    print(f"Number of vowels: {vowel_count}")
+    print(f"Number of consonants: {consonant_count}")
+
+# Input from the user
+input_string = input("Enter a string: ")
+count_vowels_and_consonants(input_string)
+
+Enter a string: Hello, World!
+
+Number of vowels: 3
+Number of consonants: 7
