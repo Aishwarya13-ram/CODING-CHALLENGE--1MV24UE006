@@ -16,3 +16,7 @@ def count_vowels_and_consonants(input_string):
 # Input from the user
 input_string = input("Enter a string: ")
 count_vowels_and_consonants(input_string)
+
+Output 
+Enter the number of Fibonacci numbers to print: 7
+First 7 Fibonacci numbers: [0, 1, 1, 2, 3, 5, 8]
